@@ -8,6 +8,8 @@ while x <= (index -1):
     array.append(participante)
     x += 1 
 
-sorteia = str(input("Sortear agora? S/N"))
+sorteia = None
+while sorteia != "s":
+    sorteia = str(input("Sortear agora? S/N"))
 if (sorteia == "s"):
     print(random.choice(array))
